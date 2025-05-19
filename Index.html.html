@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moto911 Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- bootstrap jquery and my custom javascript files -->
+  <script src="data/jquery/jquery-3.6.0.min.js"></script>
+  <script src="data/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="data/myjs.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+  <style>
+    /* Body background image */
+    body {
+        background-image: url('Background Moto911.jpg'); 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        height: 480vh; 
+        margin: 0; 
+    }
+
+    .header {
+      background-image: url('Background Moto911.jpg'); 
+      background-size: cover;
+      background-position: center;
+      height: 400px; 
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    .header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .header h1 {
+      position: relative;
+      line-height: 150px; 
+    .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+    .navbar-custom {
+      background-image: url(); 
+      padding: 0px 0;
+    }
+
+    .nav-link {
+      font-size: 400px;
+      color: black !important;
+      background-color: #444;
+      border-radius: 30px;
+      padding: 5px 15px;
+      margin-right: 10px;
+      font-weight: bold;
+    }
+
+    .nav-link:hover {
+      background-color: #666;
+    }
+
+    .navbar-brand img {
+      max-height: 20px; 
+    }
+
+    .nav {
+      background-color: #333; 
+      padding: 30px; 
+      height: 100px; 
+    }
+
+    .navbar-brand {
+      font-size: 800px; 
+      font-weight: bold; 
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div class="header sticky-top bg-dark text-white" style="padding: 20px 25px; height: auto; text-align: center;">
+  <h1 style="font-size: 5rem; margin: 0; font-weight: bold;">Welcome to the Store</h1>
+ <p style="font-size: 3.2rem; margin-top: 10px; color: black;">Find everything you need here!</p>
+
+</div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top" style="padding: 20px 30px; height: 150px;">
+  <div class="container-fluid">
+    <!-- Brand/Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="Moto911 logo.png" alt="Moto911 Logo" style="height: 400px;">
+    </a>
+
+
+    <!-- Navbar Links and Dropdowns -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <!-- Products Link -->
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" style="font-size: 2.25rem;">Products</a>
+        </li>
+
+        <!-- RCB Mags Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Magspage.html" id="rcbMagsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 2.25rem;">
+            RCB Mags
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="rcbMagsDropdown">
+         <li><a class="dropdown-item" href="Magspage.html">Mags Section</a></li>
+         </ul>
+
+        <!-- RCB Shocks Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Shockspage.html" id="rcbMagsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 2.25rem;">
+            RCB Shocks
+          </a>
+         <ul class="dropdown-menu" aria-labelledby="rcbMagsDropdown">
+         <li><a class="dropdown-item" href="Shockspage.html">Shocks Section</a></li>
+         </ul>
+
+        <!-- RCB Brake Lever Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="rcbBrakeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 2.25rem;">
+            RCB Brake Lever
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="rcbBrakeDropdown">
+            <li><a class="dropdown-item" href="Brakelever.html">Brake lever section</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <!-- hero image -->
+   <div id="carouselWithControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <img src="Moto911 Hero image.jpg" 
+           class="d-block w-100" alt="RCB Motorcycle Wheels" style="object-fit: cover; max-height: 100vh;" loading="lazy">
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <img src="RCB MAGS SP500.png" class="d-block w-100" alt="RCB Mags SP500" style="object-fit: cover; max-height: 70vh;" loading="lazy">
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <img src="RCB SHOCKS PREMIUM.png" class="d-block w-100" alt="RCB Shocks Premium" style="object-fit: cover; max-height: 70vh;" loading="lazy">
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="carousel-item">
+      <img src="RCB BRAKE LEVER.png" class="d-block w-100" alt="RCB Brake Lever" style="object-fit: cover; max-height: 70vh;" loading="lazy">
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="carousel-control-prev" href="#carouselWithControls" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselWithControls" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </a>
+</div>
+    <!-- card -->
+    <div class="container my-4">
+  <div class="row justify-content-center">
+
+    <!-- Card 1: RCB Mags SP500 -->
+    <div class="col-lg-4 col-md-6 mb-4">
+  <div class="card h-100">
+    <img src="RCB MAGS SP500.png" class="card-img-top" alt="RCB MAGS SP500" style="object-fit: cover; height: 400px;">
+    <div class="card-body text-center">
+      <h5 class="card-title" style="font-size: 1.5rem; font-weight: bold;">RCB MAGS SP500</h5>
+      <h6 class="card-subtitle mb-2 text-muted">For Yamaha Sniper 155</h6>
+      <p class="card-text" style="font-size: 1rem;">Level up your ride with the SP500! Designed for performance and style, this rim offers a smoother and faster experience on the road.</p>
+      <p class="card-text" style="font-size: 1.2rem; font-weight: bold;">Price: 7,300 Pesos</p>
+      <a href="https://www.facebook.com/profile.php?id=100095648707852">
+      <button type="button" class="btn btn-primary">Order Now</button>
+     </a>
+    </div>
+  </div>
+</div>
+
+<!-- Card 2: RCB Shocks Flow-Pro -->
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card h-100">
+    <img src="RCB SHOCKS PREMIUM.png" class="card-img-top" alt="RCB SHOCK FLOW-PRO" style="object-fit: cover; height: 400px;">
+    <div class="card-body text-center">
+      <h5 class="card-title" style="font-size: 1.5rem; font-weight: bold;">RCB SHOCK FLOW-PRO</h5>
+      <h6 class="card-subtitle mb-2 text-muted">For Yamaha Aerox</h6>
+      <p class="card-text" style="font-size: 1rem;">Upgrade with fully adjustable RCB Flow-Pro Suspension! Adjustable compression, rebound damping, and a larger piston for ultimate performance.</p>
+      <p class="card-text" style="font-size: 1.2rem; font-weight: bold;">Price: 11,500 Pesos</p>
+      <a href="https://www.facebook.com/profile.php?id=100095648707852">
+      <button type="button" class="btn btn-primary">Order Now</button>
+     </a>
+    </div>
+  </div>
+</div>
+
+<!-- Card 3: RCB Brake Lever S3 -->
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card h-100">
+    <img src="RCB BRAKE LEVER.PNG" class="card-img-top" alt="RCB Brake Lever S3" style="object-fit: cover; height: 400px;">
+    <div class="card-body text-center">
+      <h5 class="card-title" style="font-size: 1.5rem; font-weight: bold;">RCB Brake Lever S3</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Universal</h6>
+      <p class="card-text" style="font-size: 1rem;">T6 Tampered Alloy, 100% CNC Machining, Adjustable lever length. Available in various colors (Blue, Black, Gold, Red, Silver).</p>
+      <p class="card-text" style="font-size: 1.2rem; font-weight: bold;">Price: 1,300 Pesos</p>
+      <a href="https://www.facebook.com/profile.php?id=100095648707852">
+      <button type="button" class="btn btn-primary">Order Now</button>
+     </a>
+    </div>
+  </div>
+</div>
+
+    <!-- about -->
+    <div class="container my-5 bg-light border pt-5 pb-5">
+  <div class="row justify-content-center">
+    
+    <!-- Main Content -->
+    <div class="col-lg-8 col-md-10">
+      
+      <!-- Heading -->
+      <h2 class="text-center mb-4" style="color: #333; font-size: 2.5rem; font-weight: bold;">Moto911 Motorcycle Parts and Accessories</h2>
+      
+      <!-- Paragraphs -->
+      <p class="text-justify" style="color: #333; font-size: 1.2rem; line-height: 1.6;">
+        Passion leads to success. This is the story of Bob Lu, an enthusiast from Bulacan, who started small in the scooter modification industry during the peak of two-stroke motorcycle set-ups. As the industry evolved, so did the demand for innovation. Diverse underbone customizations soon replaced the two-stroke market, ushering in a new era of show and performance modifications as well as racing.
+      </p>
+      
+      <p class="text-justify" style="color: #333; font-size: 1.2rem; line-height: 1.6;">
+        Racing Boy (RCB) entered the Philippine market after Bob Lu attended the ASEAN GP in 2007 and met the three brothers behind Racing Boy Malaysia. By 2008, Bob was appointed the exclusive Philippine distributor for the brand. Racing Boy (RCB) became popular for offering a wide variety of stylish parts and accessories that were engineered for performance without compromising on quality.
+      </p>
+
+    </div>
+    
+  </div>
+</div>
+
+    <!-- photo -->
+    <div id="picture" class="container my-5">
+  <div class="row justify-content-center">
+    
+    <!-- Photos Row 1 -->
+    <div class="col-md-4 p-2">
+      <img src="RCB MAGS SAMPLE.jpg" class="img-fluid border" alt="RCB Mags Sample 1" style="object-fit: cover; height: 100%; width: 100%; max-height: 300px;">
+    </div>
+    <div class="col-md-4 p-2">
+      <img src="RCB MAGS SAMPLE2.jpg" class="img-fluid border" alt="RCB Mags Sample 2" style="object-fit: cover; height: 100%; width: 100%; max-height: 300px;">
+    </div>
+    <div class="col-md-4 p-2">
+      <img src="RCB SHOCKS SAMPLE.jpg" class="img-fluid border" alt="RCB Shocks Sample 1" style="object-fit: cover; height: 100%; width: 100%; max-height: 300px;">
+    </div>
+
+    <!-- Photos Row 2 -->
+    <div class="col-md-4 p-2">
+      <img src="RCB SHOCKS SAMPLE2.jpg" class="img-fluid border" alt="RCB Shocks Sample 2" style="object-fit: cover; height: 100%; width: 100%; max-height: 300px;">
+    </div>
+    <div class="col-md-4 p-2">
+      <img src="RCB BRAKE LEVER SAMPLE.jpg" class="img-fluid border" alt="RCB Brake Lever Sample 1" style="object-fit: cover; height: 100%; width: 100%; max-height: 300px;">
+    </div>
+    <div class="col-md-4 p-2">
+      <img src="RCB BRAKE LEVER SAMPLE2.jpg" class="img-fluid border" alt="RCB Brake Lever Sample 2" style="object-fit: cover; height: 100%; width: 100%; max-height: 300px;">
+    </div>
+
+  </div>
+</div>
+
+    <!-- About 2 -->
+<div id="about2" class="container my-5">
+  <div class="row text-center">
+    
+    <!-- Through the Years Section -->
+    <div class="col-md-6 mb-4">
+      <h3 class="display-4" style="color: black;">THROUGH THE YEARS</h3>
+      <p style="color: black; font-size: 1.25rem;">
+        Through the years, it has become a recognized name and part of the riders’ lifestyle. Racing teams and privateers use Racing Boy parts on their bikes and attain good results. This has prompted several big motorcycle manufacturers to tap into Racing Boy as a partner in motor sports and product testing & development. It is also evident as Racing Boy has also officially sponsored the Yamaha Factory Racing Team for the MotoGP in 2013 and continues to do so today.
+      </p>
+    </div>
+
+    <!-- Brand Awards Section -->
+    <div class="col-md-6 mb-4">
+      <h3 class="display-4" style="color: black;">BRAND AWARDS</h3>
+      <p style="color: black; font-size: 1.25rem;">
+        Through decades of brand building and continual delivery of high quality products, at the end of 2011, Racing Boy won its first trophy in the “2nd Asia Success Award” organized by the International Organizing Committee, Asia Success Inc. Racing Boy was awarded as “Super Golden Product” in the category of motorcycle rim products. In early 2012, Racing Boy once again obtained an award. Racing Boy brand was recognized as “11th Asia Pacific Top Excellence Brand” by the Asia Pacific Excellence Entrepreneur Alliance, supported by the top leading international magazine, Global Business Magazine.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+    <!-- Footer -->
+<footer class="bg-dark text-light pt-5 pb-3">
+    <div class="container">
+        <div class="row text-center text-md-start">
+            <!-- Business Contacts Section -->
+            <div class="col-md-4 mb-4">
+                <div class="p-4">
+                    <div>
+                        <i class="fa fa-users fa-5x"></i>
+                    </div>
+                    <h3 class="display-4">Business Contacts</h3>
+                    <h6 class="text-secondary" style="font-size: 1.5rem;">Moto911 Parts & Accessories</h6>
+                    <p style="font-size: 1.25rem;">0932-656-9457</p>
+                </div>
+            </div>
+
+            <!-- Our Stores Section -->
+            <div class="col-md-4 mb-4">
+                <h5 class="list-group-item text-light" style="font-size: 2rem;">Our Stores</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg-dark text-light" style="padding: 15px;">
+                        Physical Store: <a href="https://maps.app.goo.gl/TsNcJEV1kfKMKHSY8" class="text-decoration-none text-light">Link</a>
+                    </li>
+                    <li class="list-group-item bg-dark text-light" style="padding: 15px;">
+                        Facebook Page: <a href="https://www.facebook.com/profile.php?id=100095648707852" class="text-decoration-none text-light">Link</a>
+                    </li>
+                    <li class="list-group-item bg-dark text-light" style="padding: 15px;">
+                        Shopee Store: <a href="https://shopee.ph/moto911.ph" class="text-decoration-none text-light">shopee.ph/moto911.ph</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Follow Us Section -->
+            <div class="col-md-4 mb-4">
+    <h5 class="list-group-item text-light" style="font-size: 2rem;">Follow Us</h5>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item bg-dark text-light" style="padding: 15px;">
+            <a href="https://www.instagram.com" class="text-decoration-none text-light">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </li>
+        <li class="list-group-item bg-dark text-light" style="padding: 15px;">
+            <a href="https://www.twitter.com" class="text-decoration-none text-light">
+                <i class="fab fa-twitter"></i> Twitter
+            </a>
+        </li>
+        <li class="list-group-item bg-dark text-light" style="padding: 15px;">
+            <a href="https://www.youtube.com" class="text-decoration-none text-light">
+                <i class="fab fa-youtube"></i> YouTube
+            </a>
+        </li>
+        <li class="list-group-item bg-dark text-light" style="padding: 15px;">
+            <a href="https://www.facebook.com" class="text-decoration-none text-light">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+    <div class="text-center mt-3" style="font-size: 1rem;">
+        © 2024 Moto911. All Rights Reserved.
+    </div>
+</footer>
+<!-- Cookies -->
+<!-- Sticky Cookie Notification -->
+<div class="cookie-notification bg-light p-3 text-center">
+    <h1 class="h6 mb-0">Our Site uses cookies. Learn more about our use of cookies: <a href="#cookie-policy" class="text-primary">Cookie Policy</a>.</h1>
+    <button id="acceptCookies" class="btn btn-primary btn-sm ms-3">I Accept</button>
+</div>
+
+<!-- Rest of your content goes here -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // JavaScript to handle the acceptance of cookies
+    document.getElementById("acceptCookies").addEventListener("click", function() {
+        document.querySelector(".cookie-notification").style.display = "none";
+    });
+</script>
+</body>
+</html>
